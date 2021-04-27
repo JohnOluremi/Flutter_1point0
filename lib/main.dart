@@ -11,7 +11,7 @@ class HelloWorldApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black12,
-          title:  Text(
+          title: Text(
             'Hello world',
             textDirection: TextDirection.ltr,
           ),
@@ -41,7 +41,8 @@ class HelloWorldApp extends StatelessWidget {
                 ),
               ),
               Expanded(
-                child: Row(
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
                   children: [
                     Container(
                       height: 200,
